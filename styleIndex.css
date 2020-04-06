@@ -1,0 +1,56 @@
+body {
+  margin:0;
+}
+a {
+  color:skyblue;
+   text-decoration: none;
+}
+h1 {
+  font-size: 500%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+#그리드 {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#그리드 ol {
+  margin: 0;
+  padding-top: 40px;
+  font-size: 20px;
+  border-right: 1px solid gray;
+  color: skyblue;
+}
+#그리드 p{
+  margin: 20px;
+}
+
+
+@media(max-width:520px){
+  #그리드 {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 300%;
+    border-bottom: none;
+    text-align: left;
+    font-family: "Courier New";
+
+  }
+  img {
+   width: 150px;
+   padding-top : 10px;
+   padding-bottom: 10px;
+  }
+  #그리드 ol {
+    padding-top: 0;
+    padding-left: 60px;
+    font-size: 20px;
+    order: 0;
+    font-family: "Courier New";
+  }
+
+}
